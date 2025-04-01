@@ -14,6 +14,11 @@ app.get("/webservice/loccity/:apiKey/:city", (req, res) => {
         { name: `Dummy pub ${i + 1}` },
         { city },
         { phone: i + 11 },
+        { status: "online" },
+        { street: `Dummy street #${i}` },
+        { zip: i + 201 },
+        { country: "Dummy country" },
+        { overall: "overall jotain?" },
       ],
     })),
   };
