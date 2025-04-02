@@ -4,6 +4,16 @@ import xml from "xml";
 const app = express();
 const PORT = process.env.PORT || 55581;
 
+app.get("/", (req, res) => {
+  const origin = req.header("Origin");
+
+  res.send(
+    `make requests to "${origin}/webservice/loccity/:key/:city" 
+    the :key parameter is simply disregarded, but is necessary
+    in order to comply with the course material, so simply  try "x"`
+  );
+});
+
 app.get("/webservice/loccity/:apiKey/:city", (req, res) => {
   const city = req.params.city;
 
