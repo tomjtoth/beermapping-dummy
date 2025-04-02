@@ -1,6 +1,6 @@
 # Kuvaus
 
-HY:n Ruby on Rails kurssin [viikon 5](https://github.com/mluukkai/WebPalvelinohjelmointi2023/blob/main/web/viikko5.md) mock
+HY:n Ruby on Rails kurssin [viikon 5](https://github.com/mluukkai/WebPalvelinohjelmointi2023/blob/main/web/viikko5.md) mock, joka pyörii [tässä](https://beermapping-dummy.fly.dev)
 
 ## Käyttö
 
