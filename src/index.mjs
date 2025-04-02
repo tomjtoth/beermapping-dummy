@@ -9,7 +9,7 @@ app.get("/", (_req, res) => {
   res.send(
     `make requests to "${ORIGIN}/webservice/loccity/:key/:city" 
     the :key parameter is simply disregarded, but is necessary
-    in order to comply with the course material, so simply  try "x"`
+    in order to comply with the course material, so simply set api_key = "x"`
   );
 });
 
