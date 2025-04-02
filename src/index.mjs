@@ -3,12 +3,11 @@ import xml from "xml";
 
 const app = express();
 const PORT = process.env.PORT || 55581;
+const ORIGIN = process.env.ORIGIN || `http://localhost:${PORT}`;
 
-app.get("/", (req, res) => {
-  const origin = req.header("Origin");
-
+app.get("/", (_req, res) => {
   res.send(
-    `make requests to "${origin}/webservice/loccity/:key/:city" 
+    `make requests to "${ORIGIN}/webservice/loccity/:key/:city" 
     the :key parameter is simply disregarded, but is necessary
     in order to comply with the course material, so simply  try "x"`
   );
@@ -39,4 +38,4 @@ app.get("/webservice/loccity/:apiKey/:city", (req, res) => {
   res.send(asXml);
 });
 
-app.listen(PORT, () => console.log(`listening on ${PORT}`));
+app.listen(PORT, () => console.log(`listening on ${ORIGIN}`));
