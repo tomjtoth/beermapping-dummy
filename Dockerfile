@@ -37,4 +37,5 @@ COPY --from=build /app /app
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
 ENV PORT=3000
+ENV ORIGIN=https://beermapping-dummy.fly.dev
 CMD [ "node", "src/index.mjs" ]
